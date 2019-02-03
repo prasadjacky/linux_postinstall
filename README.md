@@ -48,7 +48,7 @@ $ sudo apt-get install ubuntu-mate-desktop
 $ sudo apt install tasksel \
 $ sudo tasksel install kubuntu-desktop \
 $ sudo apt install sddm \
-$ sudo dpkg-reconfigure sddm \
+$ sudo dpkg-reconfigure sddm 
 
 ## 11. Install Nodejs
 $ sudo apt-get install nodejs \
