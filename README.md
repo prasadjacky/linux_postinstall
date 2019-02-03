@@ -6,9 +6,9 @@ $ sudo apt-get update && sudo apt-get upgrade
 ## 2. Installing Google Chrome
 ### Using PPA
 
-$ wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
-$ sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
-$ sudo apt-get update
+$ wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add - \
+$ sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list' \
+$ sudo apt-get update \
 
 #### Chrome Stable
 $ sudo apt-get install google-chrome-stable
@@ -28,7 +28,7 @@ $ sudo apt install ubuntu-restricted-extras
 - Steam
 
 ## 6. Install Gnome tweaks
-$ sudo add-apt-repository universe
+$ sudo add-apt-repository universe \
 $ sudo apt install gnome-tweak-tool
 
 ## 7. Enable canonical updates and install additional drivers
@@ -45,29 +45,29 @@ $ sudo apt-get install cinnamon-desktop-environment
 ### Mate
 $ sudo apt-get install ubuntu-mate-desktop
 ### KDE
-$ sudo apt install tasksel
-$ sudo tasksel install kubuntu-desktop
-$ sudo apt install sddm
-$ sudo dpkg-reconfigure sddm
+$ sudo apt install tasksel \
+$ sudo tasksel install kubuntu-desktop \
+$ sudo apt install sddm \
+$ sudo dpkg-reconfigure sddm \
 
 ## 11. Install Nodejs
-$ sudo apt-get install nodejs
+$ sudo apt-get install nodejs \
 $ sudo apt-get install npm
 
 ## 12. Install docker
-$ sudo apt-get install \
-    apt-transport-https \
-    ca-certificates \
-    curl \
-    gnupg-agent \
-    software-properties-common
+$ sudo apt-get install \\
+    apt-transport-https \\
+    ca-certificates \\
+    curl \\
+    gnupg-agent \\
+    software-properties-common \
     
-$ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+$ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add - \
 $ sudo add-apt-repository \\
      "deb [arch=amd64] https://download.docker.com/linux/ubuntu \\
      $(lsb_release -cs) \\
-     stable"
-$ sudo apt-get update
+     stable" \
+$ sudo apt-get update \
 $ sudo apt-get install docker-ce docker-ce-cli containerd.io
 ### Install specifc version
 #### List available versions
