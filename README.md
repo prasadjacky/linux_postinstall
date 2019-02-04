@@ -50,9 +50,10 @@ $ sudo tasksel install kubuntu-desktop \
 $ sudo apt install sddm \
 $ sudo dpkg-reconfigure sddm 
 
-## 11. Install Nodejs
+## 11. Install git & Nodejs
 $ sudo apt-get install nodejs \
-$ sudo apt-get install npm
+$ sudo apt-get install npm \
+$ sudo apt-get install git
 
 ## 12. Install docker
 $ sudo apt-get install \\
@@ -74,3 +75,12 @@ $ sudo apt-get install docker-ce docker-ce-cli containerd.io
 $ apt-cache madison docker-ce
 #### Install specific version
 $ sudo apt-get install docker-ce=<VERSION_STRING> docker-ce-cli=<VERSION_STRING> containerd.io
+
+## 13. Install Vimix theme by vinceliuice
+https://github.com/vinceliuice/vimix-gtk-themes.git
+### Optionally you can also install the icons by Paper or Vimix
+https://github.com/vinceliuice/vimix-icon-theme.git
+
+## 14. Install VMWare Horizon Client
+Download link : 4.10.0
+https://download3.vmware.com/software/view/viewclients/CART19FQ4/VMware-Horizon-Client-4.10.0-11053294.x64.bundle
